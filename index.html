@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <span class="img">S</span>
+          <div class="logo_tag"> <span><span class="first">S</span><span class="mid">hubhra</span><span
+                class="d">d</span><span class="in">eep</span></span></div>
+          <img src="sun.png" alt="" id="icon">
+        </div>
+        <ul id="sidemenu" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i name="cross" class="fa-solid fa-x" onclick="closemenu()"></i>
+        </ul>
+        <i name="bar" class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <section id="home" class="profile">
+        <div class="profiletext">
+          <h1>Hi, I'm <span class="crimson">Shubhradeep</span> Maity</h1>
+          <div>and I am a passionate</div>
+
+          <span id="element"></span>
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+          <script>
+            var typed = new Typed('#element', {
+              strings: ['Software Developer', 'Web Designer', 'Frontend Developer', 'Software Developer', 'Web Designer', 'Frontend Developer'],
+              typeSpeed: 100,
+            });
+          </script>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('Shubhradeep Maity_Resume.pdf')">
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+
+        </div>
+        <div class="profilepic">
+          <img src="pic.jpg" alt="">
+        </div>
+
+      </section>
+    </div>
+  </header>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col2">
+          <img src="about.jpg" alt="about pic">
+        </div>
+        <div class="about-col">
+          <h1 class="subtitle">About Me</h1>
+          <p clsss="paragraph">I am a Software Developer(Frontend Developer), and a final year student pursuing computer
+            science at
+            NSEC'24 in Kolkata. I have experience in React, JSX, with proficiency in web technologies like HTML5, CSS3,
+            JavaScript, building web applications,design and building responsive user interfaces.</p>
+          <div class="tab-titles">
+            <p class="tab-links active" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+          </div>
+          <div id="experience" class="tab-contains active-tab">
+            <ul>
+              <li class="ex-hide"><span>Advanced Software Engineering-2023
+                </span><br>
+                Virtual internship Experience at Walmart Global Tech.Worked on Advanced Data Structures, Relational
+                Database Design to provide understanding of how to
+                build relation between users and applications and the database, Software Architecture to design
+                software.
+                It mainly involves the design computer programs that store and manage data for businesses. and Data
+                Munging.</li>
+
+
+
+              <li class="ex-block"><span>Advanced Software Engineering-2023
+                </span><br>
+                Virtual internship Experience at Walmart Global Tech.Worked on Advanced Data Structures, Relational
+                Database
+                ,Software Architecture,
+                and Data
+                Munging.</li>
+
+
+            </ul>
+          </div>
+
+          <div id="education" class="tab-contains">
+            <ul>
+              <li><span>B.Tech in
+                  CSE (2020-
+                  2024)</span><br>Netaji Subhash Engineering College with 8.99 CGPA</li>
+
+              <li><span>Class XII (2020)</span><br>Jadavpur Vidyapith with 79%</li>
+              <li><span>Class X (2018)</span><br>Gyandeep Vidyapith With 91%</li>
+
+            </ul>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- skills -->
+
+
+
+
+
+
+
+
+
+  <div id="skills">
+    <div class="container">
+
+
+
+
+      <div class="skill-col">
+        <h1 class="subtitle">Skills</h1>
+        <div class="skill-menu">
+          <div id="language" class="skill-menulist">
+            <p class="skill-links">Programing language</p>
+            <ul class="hide">
+              <li>C/C++</li>
+              <li>javascript</li>
+              <li>kotlin</li>
+              <li>java</li>
+            </ul>
+          </div>
+          <div id="coursework" class="skill-menulist">
+            <p class="skill-links">Coursework</p>
+            <ul class="hide">
+              <li>DSA</li>
+              <li>OOP</li>
+              <li>DBMS</li>
+              <li>Computer Network</li>
+              <li>Software Engineering</li>
+            </ul>
+          </div>
+
+          <div id="dev" class="skill-menulist">
+            <p class="skill-links">Familiar Technology</p>
+
+            <ul class="hide">
+              <li>Web Development</li>
+              <li>Android Development</li>
+
+            </ul>
+          </div>
+          <div id="frameworks" class="skill-menulist">
+            <p class="skill-links">Frameworks</p>
+            <ul class="hide">
+              <li>React</li>
+
+              <li>Tailwind Css</li>
+            </ul>
+          </div>
+          <div id="db" class="skill-menulist">
+            <p class="skill-links">Database</p>
+
+            <ul class="hide">
+              <li>SQL</li>
+
+            </ul>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- project -->
+
+
+  <section id="projects">
+    <div class="container">
+
+
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="crud2.jpg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">CURD Application</h2>
+            <p> A real-time, user-friendly CRUD web app with full functionality in Vanilla JavaScript for data creation, reading, updating, and deletion.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shubhradeepp/crud'"">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://shubhradeepp.github.io/crud/'">
+                Live Demo
+              </button>
+            </div>
+
+          </div>
+
+
+
+          <div class="details-container color-container">
+            <div class="article-container ">
+              <img style="height: 20rem;" src="pizza.jpg" alt="Project 2" class="project-img " />
+            </div>
+            <h2 class="experience-sub-title project-title"> RESTAURANT WEBSITE</h2>
+            <p>I've created a visually stunning, fully responsive website using HTML, CSS, and JavaScript, hosted on GitHub, providing an immersive and interactive online experience.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shubhradeepp/restaurant'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://shubhradeepp.github.io/restaurant/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="meme.jpg" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">MEME share App</h2>
+<p >A dynamic Kotlin meme app seamlessly fetching and sharing fresh, humorous memes through an external API, perfect for meme enthusiasts.</p>            <div class="btn-container">
+              
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/posts/shubhradeepp_app-project-kotlin-activity-7019343404551548928-rsI7/?utm_source=share&utm_medium=member_desktop'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <!-- contact -->
+  <div id="contact">
+    <div class="container">
+  
+
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title"></h1>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:shubhradeepmaity3@gmail.com">shubhradeepmaity3@gmail.com</a> </p>
+          <p><i class="fa-solid fa-phone"></i>9330880741</p>
+          <div class="social-icon">
+       <a href="https://www.linkedin.com/in/shubhradeepp/"><i class="fa-brands fa-linkedin"></i></a>
+       <a href="https://www.instagram.com/shubhradeeep/"><i class="fa-brands fa-instagram"></i></a>
+
+       <a href="https://twitter.com/shubhradeeep"><i class="fa-brands fa-twitter"></i></a>
+
+          </div>
+
+        </div>
+
+        <div class="contact-right">
+          <form >
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button class="btn btn-color-2" type="submit">Submit</button>
+          </form>
+
+        </div>
+      </div>
+      
+    </div>
+    <div class="copywrite">  
+      
+   <p>Copyright © Shubhradeep Made wtih <i class= "fas fa-heart" "></i></p>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+
+
+</html>
