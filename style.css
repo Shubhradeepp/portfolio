@@ -426,7 +426,7 @@ p{
 
 /* contact */
 
-#contact{ 
+#contact.contsiner{ 
     text-transform: none;
     padding-right:30px;
 }
