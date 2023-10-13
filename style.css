@@ -9,7 +9,7 @@
     list-style: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
+    
     transition: all .3s linear;
     
 }
@@ -34,6 +34,7 @@ a:hover{
 }
 html{
   scroll-behavior: smooth;
+    text-transform: capitalize;
 }
 body{
     color: var(--secondary-color);
