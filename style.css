@@ -427,7 +427,9 @@ p{
 /* contact */
 
 #contact{ 
-    text-transform: none;}
+    text-transform: none;
+    padding-right:30px;
+}
 
 .contact-left{
   flex-basis: 35%;
