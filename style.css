@@ -426,6 +426,8 @@ p{
 
 /* contact */
 
+#contact{ 
+    text-transform: none;}
 
 .contact-left{
   flex-basis: 35%;
